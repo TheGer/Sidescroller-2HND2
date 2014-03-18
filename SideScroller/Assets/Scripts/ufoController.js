@@ -4,21 +4,25 @@ var movingDown:boolean;
 
 //blue laser 
 var ufoLaser:Rigidbody;
+var explosion:Rigidbody;
 
 
-
-
+function OnBecameInvisible()
+{
+	Destroy(this.gameObject);
+}
 
 
 function OnTriggerEnter(other:Collider)
 {
 	if(other.gameObject.tag=="rocket")
 	{
-		rocketshipController.lives--;
+		rocketshipController.health--;
+		Instantiate(explosion,transform.position,transform.rotation);
 		//destroy this UFO
 		Destroy(this.gameObject);
 		//once the lives are set to 0
-		if (rocketshipController.lives == 0)
+		if (rocketshipController.health == 0)
 		{
 			Destroy(other.gameObject);
 		}

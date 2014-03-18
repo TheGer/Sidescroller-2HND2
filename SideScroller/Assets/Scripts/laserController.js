@@ -1,5 +1,8 @@
 ﻿#pragma strict
+//speed of the laser being fired
 var laserSpeed:int;
+//reference to the explosion which will be triggered when laser hits ufo
+var explosion:Rigidbody;
 
 
 function Start () {
@@ -25,11 +28,13 @@ function OnTriggerEnter(other:Collider)
 		if (remainder == 0)
 		{
 			//increase lives by ten
-			rocketshipController.lives++;
+			rocketshipController.health++;
 		}
 		
 		//destroy the UFO
 		Destroy(other.gameObject);
+		//create an instance of the explosion
+		Instantiate(explosion,transform.position,transform.rotation);
 		//destroy the laser
 		Destroy(this.gameObject);
 	}

@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\backgroundVisible.js" />
      <Compile Include="Assets\Scripts\cameraController.js" />
      <Compile Include="Assets\Scripts\enemyLaserController.js" />
+     <Compile Include="Assets\Scripts\explosionController.js" />
      <Compile Include="Assets\Scripts\laserController.js" />
      <Compile Include="Assets\Scripts\rocketshipController.js" />
      <Compile Include="Assets\Scripts\rocketshiplaserController.js" />
