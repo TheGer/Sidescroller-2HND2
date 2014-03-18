@@ -8,11 +8,11 @@ function createUFO()
 {
  //x,y,z position with 0 rotation
  //set the x position
- var xpos:int;
+ var xpos:float;
  xpos = transform.position.x + Random.Range(8,12);
  //set the y position
- var ypos:int;
- ypos = transform.position.y + Random.Range(-4.5,4.5);
+ var ypos:float;
+ ypos = transform.position.y + Random.Range(-4.5,4);
  
  //create a ufo relative to the game object
  Instantiate(ufo,Vector3(xpos,ypos,0),Quaternion.identity);

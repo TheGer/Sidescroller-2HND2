@@ -13,6 +13,8 @@ function OnGUI()
 	//parameters: x, y, width, height
 	GUI.Label(Rect(5,5,150,50),"Score: "+score);
 	GUI.Label(Rect(160,5,150,50),"Lives: "+lives);
+	
+	//this is a test comment
 }
 
 

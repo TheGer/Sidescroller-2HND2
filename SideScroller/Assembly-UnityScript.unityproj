@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\UFOGeneratorScript.js" />
      <Compile Include="Assets\Scripts\backgroundVisible.js" />
      <Compile Include="Assets\Scripts\cameraController.js" />
+     <Compile Include="Assets\Scripts\enemyLaserController.js" />
      <Compile Include="Assets\Scripts\laserController.js" />
      <Compile Include="Assets\Scripts\rocketshipController.js" />
      <Compile Include="Assets\Scripts\rocketshiplaserController.js" />
