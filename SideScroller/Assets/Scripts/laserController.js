@@ -29,6 +29,7 @@ function OnTriggerEnter(other:Collider)
 		{
 			//increase lives by ten
 			rocketshipController.health++;
+			Debug.Log("test");
 		}
 		
 		//destroy the UFO
